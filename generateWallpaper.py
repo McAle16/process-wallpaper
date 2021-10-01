@@ -1,80 +1,111 @@
-import re
+from colors import *
+from matplotlib.colors import LinearSegmentedColormap
 from PIL import Image
 from wordcloud import WordCloud
+import constants
 import json
 import os
-from matplotlib.colors import LinearSegmentedColormap
 import random
-from colors import *
+import re
 
-colorMap = LinearSegmentedColormap.from_list("mycmap", colors[random.randint(1,len(colors))])
-commandList = []
+class Monitor:
+  def __init__(self, width, height):
+    self.width = width
+    self.height = height
 
-with open("top.out", "r") as topFile:
-  topOutput = topFile.read().split("\n")[7:]
+class Configuration:
+  def __init__(self, monitor_width, monitor_height, wordcloud_background, wordcloud_margin):
+    self.monitorWidth = monitor_width
+    self.monitorHeight = monitor_height
+    self.wordcloudBackground = wordcloud_background
+    self.wordcloudMargin = wordcloud_margin
 
-  for line in topOutput[:-1]:
-    line = re.sub(r'\s+', ' ', line).strip()
-    fields = line.split(" ")
+def getProcessList():
+  processList = []
 
-    try:
-      if fields[11].count("/") > 0:
-        command = fields[11].split("/")[0]
-      else:
-        command = fields[11]
+  with open(constants.TOP_OUTPUT, 'r') as topFile:
+    topOutput = topFile.read().split('\n')[7:]
 
-      cpu = float(fields[8].replace(",", "."))
-      mem = float(fields[9].replace(",", "."))
+    for line in topOutput[:-1]:
+      line = re.sub(r'\s+', ' ', line).strip()
+      fields = line.split(' ')
 
-      if command != "top":
-        commandList.append((command, cpu, mem))
-    except:
-      pass
+      try:
+        if fields[11].count('/') > 0:
+          process = fields[11].split('/')[0]
+        else:
+          process = fields[11]
 
-commandDict = {}
+        cpu = float(fields[8].replace(',', '.'))
+        mem = float(fields[9].replace(',', '.'))
 
-for command, cpu, mem in commandList:
-  if command in commandDict:
-    commandDict[command][0] += cpu
-    commandDict[command][1] += mem
-  else:
-    commandDict[command] = [cpu + 1, mem + 1]
+        if process != 'top':
+          processList.append((process, cpu, mem))
+      except:
+        pass
 
-resourceDict = {}
+  return processList
 
-for command, [cpu, mem] in commandDict.items():
-  resourceDict[command] = (cpu ** 2 + mem ** 2) ** 0.5
+def getProcessDictionary(process_list):
+  processDictionary = {}
 
-width, height = None, None
-try:
-  width, height = ((os.popen("xrandr | grep '*'").read()).split()[0]).split("x")
-  width = int(width)
-  height = int(height)
-except:
-  pass
+  for process, cpu, mem in process_list:
+    if process in processDictionary:
+      processDictionary[process][0] += cpu
+      processDictionary[process][1] += mem
+    else:
+      processDictionary[process] = [cpu + 1, mem + 1]
 
-configJSON = json.loads(open("config.json", "r").read())
+  return processDictionary
 
-if not width or not height:
-  width = configJSON['resolution']['width']
-  height = configJSON['resolution']['height']
+def getResourseDictionary(process_list):
+  processDictionary = getProcessDictionary(process_list)
 
-wc = WordCloud(
-  background_color=configJSON["wordcloud"]["background"],
-  width=width - 2 * int(configJSON["wordcloud"]["margin"]),
-  height=height - 2 * int(configJSON["wordcloud"]["margin"]),
-  colormap=colorMap
-).generate_from_frequencies(resourceDict)
+  resourceDictionary = {}
+  for process, [cpu, mem] in processDictionary.items():
+    resourceDictionary[process] = (cpu ** 2 + mem ** 2) ** 0.5
 
-wc.to_file('wc.png')
+  return resourceDictionary
 
-wordcloud = Image.open("wc.png")
-wallpaper = Image.new('RGB', (width, height), configJSON["wordcloud"]["background"])
-wallpaper.paste(
-  wordcloud,
-  (
-    configJSON["wordcloud"]["margin"],
-    configJSON["wordcloud"]["margin"]
+def getMonitorDimensions(configuration):
+  try:
+    width, height = ((os.popen("xrandr | grep '*'").read()).split()[0]).split('x')
+
+    return Monitor(int(width), int(height))
+  except:
+    pass
+
+    return Monitor(configuration.monitorWidth, configuration.monitorHeight)
+
+def getConfiguration():
+  configJSON = json.loads(open(constants.CONFIGURATION_FILE, 'r').read())
+
+  return Configuration(configJSON['resolution']['width'], configJSON['resolution']['height'], configJSON['wordcloud']['background'], configJSON['wordcloud']['margin'])
+
+def generateWallpaper(configuration, monitor, resource_dictionary, color_map):
+  wordCloud = WordCloud(
+    background_color = configuration.wordcloudBackground,
+    width = monitor.width - 2 * int(configuration.wordcloudMargin),
+    height = monitor.height - 2 * int(configuration.wordcloudMargin),
+    colormap = colorMap
+  ).generate_from_frequencies(resourceDictionary)
+
+  wordCloud.to_file(constants.WORD_CLOUD_IMAGE_NAME)
+
+  wordCloudImage = Image.open(constants.WORD_CLOUD_IMAGE_NAME)
+  wallpaperImage = Image.new(constants.IMAGE_MODE, (monitor.width, monitor.height), configuration.wordcloudBackground)
+  wallpaperImage.paste(
+    wordCloudImage,
+    (
+      configuration.wordcloudMargin,
+      configuration.wordcloudMargin
+    )
   )
-)
-wallpaper.save("wallpaper.png")
+  wallpaperImage.save(constants.WALLPAPER_IMAGE_NAME)
+
+configuration = getConfiguration()
+monitor = getMonitorDimensions(configuration)
+processList = getProcessList()
+resourceDictionary = getResourseDictionary(processList)
+colorMap = LinearSegmentedColormap.from_list(constants.COLOR_MAP_NAME, colors[random.randint(1, len(colors))])
+generateWallpaper(configuration, monitor, resourceDictionary, colorMap)

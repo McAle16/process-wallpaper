@@ -1,0 +1,6 @@
+COLOR_MAP_NAME = 'colorMapName'
+CONFIGURATION_FILE = 'config.json'
+IMAGE_MODE = 'RGB'
+TOP_OUTPUT= 'top.out'
+WALLPAPER_IMAGE_NAME = 'wallpaper.png'
+WORD_CLOUD_IMAGE_NAME = 'wordCloud.png'
