@@ -1,5 +1,13 @@
 colors = [
   [
+    #SHIMMERING BLUES AND GREENS
+    '#0444BF',#BLUE
+    '#0584F2',#MEDIUM BLUE
+    '#0AAFF1',#LIGHT BLUE
+    '#EDF259',#YELLOW
+    '#A79674',#LIGHT BROWN
+  ],
+  [
     #LIGHT BLUE
     '#022f40',#RICH BLACK
     '#38aecc',#MAXIMUM BLUE
