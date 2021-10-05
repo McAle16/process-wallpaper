@@ -1,4 +1,12 @@
 colors = [
+   [
+    #SUNSET OVER A SWAMP
+    '#6465A5',#BLUE
+    '#6975A6',#MEDIUM BLUE
+    '#F3E96B',#YELLOW
+    '#F28A30',#ORANGE
+    '#F05837',#RED
+  ],
   [
     #SHIMMERING BLUES AND GREENS
     '#0444BF',#BLUE
