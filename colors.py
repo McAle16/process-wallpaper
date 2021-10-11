@@ -1,4 +1,12 @@
 colors = [
+    [
+    #MEDITERREAN BLUES
+    '#ABA6BF',#LIGHTBLUE
+    '#595775',#BLUE
+    '#583E2E',#BROWN
+    '#F1E0D6',#CREAM
+    '#BF988F',#EARTH
+   ],
    [
     #SUNSET OVER A SWAMP
     '#6465A5',#BLUE
