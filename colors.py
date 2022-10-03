@@ -163,5 +163,12 @@ colors = [
     '#140152',#Midnight Blue
     '#22007C',#Navy blue
     '#0D00A4',#Duke Blue
+  ],
+  [
+    '#81717aff',#Old Lavender
+    '#9d8ca1ff',#Heliotrope Gray
+    '#9993b2ff',#Cool Grey
+    '#a7abddff',#Maximum Blue Purple
+    '#b4d4eeff',#Beau Blue
   ]
 ]
