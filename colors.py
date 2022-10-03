@@ -156,5 +156,12 @@ colors = [
     "#e5ece9",#Mint Cream
     "#c60f7b",#Magenta Dye
     "#f90093",#Magenta Process
+  ],
+  [
+    '#02010A',#Rich Black Fogra 39
+    '#04052E',#Oxford Blue
+    '#140152',#Midnight Blue
+    '#22007C',#Navy blue
+    '#0D00A4',#Duke Blue
   ]
 ]
