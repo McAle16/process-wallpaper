@@ -184,5 +184,8 @@ colors = [
   ],
   [
     '#feeded',#Light pink
+  ],
+  [
+    '#beefed',#Acqua green
   ]
 ]
