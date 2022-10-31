@@ -178,5 +178,8 @@ colors = [
     '#9993b2ff',#Cool Grey
     '#a7abddff',#Maximum Blue Purple
     '#b4d4eeff',#Beau Blue
+  ],
+  [
+    '#deface',#Light green
   ]
 ]
