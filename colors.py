@@ -1,29 +1,29 @@
 colors = [
-    [
+  [
     #5 COLORS RAINBOW
     '#442288',#SPANISH-VIOLET
     '#6CA2EA',#LITTLE BOY BLUE
     '#B5D33D',#ANDROID GREEN
     '#FED23F',#SUNGLOW
     '#EB7D5B',#BURNT SIENNA
-    ],
-    [
+  ],
+  [
     #MEDITERREAN BLUES
     '#ABA6BF',#LIGHTBLUE
     '#595775',#BLUE
     '#583E2E',#BROWN
     '#F1E0D6',#CREAM
     '#BF988F',#EARTH
-   ],
-   [
+  ],
+  [
     #BLOODY MOON
     '#CE8054',#ORANGE
     '#B35340',#RED
     '#6F3637',#PRUNE
     '#233342',#BLUE
     '#4B2B31',#PURPLE
-   ],
-   [
+  ],
+  [
     #SUNSET OVER A SWAMP
     '#6465A5',#BLUE
     '#6975A6',#MEDIUM BLUE
