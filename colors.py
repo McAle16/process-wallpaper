@@ -180,12 +180,10 @@ colors = [
     '#b4d4eeff',#Beau Blue
   ],
   [
-    '#deface',#Light green
-  ],
-  [
-    '#feeded',#Light pink
-  ],
-  [
-    '#beefed',#Acqua green
+    '#deface',#Light Green
+    '#feeded',#Light Pink
+    '#beefed',#Acqua Green
+    '#dabbed',#Light Violet
+    '#deafed',#Another Light Violet
   ]
 ]
