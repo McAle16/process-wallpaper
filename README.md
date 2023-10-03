@@ -1,6 +1,6 @@
 # process-wallpaper-multicolor
 
-The difference between the original and this fork is that it now also works on ubuntu mate and every time a background is regenerated a random color is chosen from a chosen list.
+The difference between the original and this fork is that it now also works on Ubuntu mate, and every time a background is regenerated, a random color is chosen from a chosen list.
 The list can be changed without difficulty to add your favorite color.
 
 Python and shell scripts which set your wallpaper to a wordcloud of the most resource-intensive processes presently running.
@@ -10,11 +10,11 @@ Python and shell scripts which set your wallpaper to a wordcloud of the most res
 ![](./screenshot/BLUE.png)
 ![](./screenshot/PINK.png)
 
-## Depenendencies
+## Dependencies
 * `python3`
 * `gsettings` (comes preinstalled with GNOME), `plasmashell` (comes with KDE) or `feh` (supported by many Linux distributions). 
 
-If `gsettings`, `plasmashell` and `feh` are all not supported by your platform, you can still set `wallpaper.png` as your wallpaper manually.
+If `gsettings`, `plasmashell`, and `feh` are not supported by your platform, you can still manually set `wallpaper.png` as your wallpaper.
 
 ## Setup
 
@@ -35,7 +35,7 @@ pip3 install -r requirements.txt --user
 ```
 
 ## Use
-The wallpaper is updated every time `updateWallpaper.sh` is run. To trigger the update every minute, append the following line to `crontab -e`, remember to replace `/path/to/script/directory` with the directory of your scripts.
+The wallpaper is updated every time `updateWallpaper.sh` is run. To trigger the update every minute, append the following line to `crontab -e`, and remember to replace `/path/to/script/directory` with the directory of your scripts.
 ### KDE
 ```
 * * * * * export "binpath=/path/to/script/directory"; "DISPLAY=:$(ls -1 /tmp/.X11-unix/X* | grep -oE "[0-9]*$" | sort -n | head -1)"; export "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus"; (pushd "${binpath}" && ./updateWallpaper.sh && ./setWallpaper.sh; popd) 2>&1 | logger -t "process-wallpaper"
