@@ -1,189 +1,290 @@
 colors = [
   [
-    #5 COLORS RAINBOW
-    '#442288',#SPANISH-VIOLET
-    '#6CA2EA',#LITTLE BOY BLUE
-    '#B5D33D',#ANDROID GREEN
-    '#FED23F',#SUNGLOW
-    '#EB7D5B',#BURNT SIENNA
+    #SPANISH-VIOLET
+    '#442288',
+    #LITTLE BOY BLUE
+    '#6CA2EA',
+    #ANDROID GREEN
+    '#B5D33D',
+    #SUNGLOW
+    '#FED23F',
+    #BURNT SIENNA
+    '#EB7D5B',
   ],
   [
-    #MEDITERREAN BLUES
-    '#ABA6BF',#LIGHTBLUE
-    '#595775',#BLUE
-    '#583E2E',#BROWN
-    '#F1E0D6',#CREAM
-    '#BF988F',#EARTH
-  ],
-  [
-    #BLOODY MOON
-    '#CE8054',#ORANGE
-    '#B35340',#RED
-    '#6F3637',#PRUNE
-    '#233342',#BLUE
-    '#4B2B31',#PURPLE
-  ],
-  [
-    #SUNSET OVER A SWAMP
-    '#6465A5',#BLUE
-    '#6975A6',#MEDIUM BLUE
-    '#F3E96B',#YELLOW
-    '#F28A30',#ORANGE
-    '#F05837',#RED
-  ],
-  [
-    #SHIMMERING BLUES AND GREENS
-    '#0444BF',#BLUE
-    '#0584F2',#MEDIUM BLUE
-    '#0AAFF1',#LIGHT BLUE
-    '#EDF259',#YELLOW
-    '#A79674',#LIGHT BROWN
-  ],
-  [
-    #LIGHT BLUE
-    '#022f40',#RICH BLACK
-    '#38aecc',#MAXIMUM BLUE
-    '#0090c1',#BLUE (NCS)
-    '#183446',#YANKEES BLUE
-    '#046e8f',#SEA BLUE
-  ],
-  [
-    #ACQUAMARINE
-    '#041b15',#RICH BLACK (FOGRA29)
-    '#136f63',#DEEP GREEN-CYAN TURQUOISE
-    '#22aaa1',#LIGHT SEA GREEN
-    '#4ce0d2',#TURQUOISE
-    '#84cae7',#SKY BLUE
-  ],
-  [
-    #FUCHSIA
-    '#f433ab',#FROSTBITE
-    '#cb04a5',#DEEP MAGENTA
-    '#934683',#PLUM
-    '#65334d',#WINE DREGS
-    '#2d1115',#DARK SIENNA
-  ],
-  [
-    #YELLOW
-    '#f2dc5d',#STIL DE GRAIN YELLOW
-    '#f2db59',#MUSTARD
-    '#dbc964',#BOOGER BUSTER
-    '#a38b03',#DARK YELLOW
-    '#352f0a',#PULLMAN GREEN
-  ],
-  [
-    #LIGHT PURPLE
-    '#6e44ff',#VERY LIGHT BLUE
-    '#a991ff',#PALE VIOLET
-    '#cfc1ff',#PERIWINKLE
-    '#a78eff',#PALE VIOLET
-    '#937aef',#MEDIUM PURPLE
-  ],
-  [
-    #PINK
-    '#8b1e3f',#BIG DIP O’RUBY
-    '#3d1521',#DARK SIENNA
-    '#bc8797',#ENGLISH LAVENDER
-    '#ef86a5',#VANILLA ICE
-    '#db3f6e',#PARADISE PINK
-  ],
-  [
-    #BROWN
-    '#3d3522',#OLIVE DRAB (#7)
-    '#49412d',#TAUPE
-    '#605438',#UMBER
-    '#af9557',#DEER
-    '#f7e9ca',#CHAMPAGNE
-  ],
-  [
-    #GREEN
-    '#424342',#ARSENIC
-    '#244f24',#CAL POLY POMONA GREEN
-    '#1b6d1b',#LINCOLN GREEN
-    '#109910',#INDIA GREEN
-    '#1efc1e',#NEON GREEN
-  ],
-  [
+    #LIGHTBLUE
+    '#ABA6BF',
     #BLUE
-    '#595959',#DAVY'S GREY
-    '#7f7f7f',#TROLLEY GREY
-    '#a5a5a5',#QUICK SILVER
-    '#cccccc',#PASTEL GRAY
-    '#f2f2f2',#ANTI-FLASH WHITE
-  ],
-  [
-    #RED
-    '#0c0a3e',#MIDDLE RED PURPLE
-    '#201d7a',#ST. PATRICK'S BLUE
-    '#423eb2',#OCEAN BLUE
-    '#554ff9',#MAJORELLE BLUE
-    '#7a76f2',#MEDIUM SLATE BLUE
-  ],
-  [
-    #PURPLE
-    '#650d1b',#DARK SCARLET
-    '#820015',#RED DEVIL
-    '#9b1229',#RUBY RED
-    '#ad1b34',#VIVID BURGUNDY
-    '#dd1f3e',#CRIMSON
+    '#595775',
+    #BROWN
+    '#583E2E',
+    #CREAM
+    '#F1E0D6',
+    #EARTH
+    '#BF988F',
   ],
   [
     #ORANGE
-    '#0d0221',#RICH BLACK (FOGRA29)
-    '#1f0849',#MIDDLE RED PURPLE
-    '#49258c',#KSU PURPLE
-    '#b7a7d6',#LIGHT PASTEL PURPLE
-    '#cfc2e8',#SOAP
+    '#CE8054',
+    #RED
+    '#B35340',
+    #PRUNE
+    '#6F3637',
+    #BLUE
+    '#233342',
+    #PURPLE
+    '#4B2B31',
   ],
   [
-    #LIGHT GREEN
-    '#f6fedb',#BEIGE
-    '#d5e5a2',#PALE GOLDENROD
-    '#c1d875',#MEDIUM SPRING BUD
-    '#aac454',#MONOCHROMATIC MODE
-    '#7d962a',#OLIVE DRAB (#3)
+    #BLUE
+    '#6465A5',
+    #MEDIUM BLUE
+    '#6975A6',
+    #YELLOW
+    '#F3E96B',
+    #ORANGE
+    '#F28A30',
+    #RED
+    '#F05837',
   ],
   [
-    #DARK PINK
-    '#a54657',#ENGLISH RED
-    '#59262f',#CAPUT MORTUUM
-    '#f77e94',#TULIP
-    '#f26a83',#WILD WATERMELON
-    '#f25773',#FIERY ROSE
+    #BLUE
+    '#0444BF',
+    #MEDIUM BLUE
+    '#0584F2',
+    #LIGHT BLUE
+    '#0AAFF1',
+    #YELLOW
+    '#EDF259',
+    #LIGHT BROWN
+    '#A79674',
   ],
   [
-    "#fb8b24",#Dark Orange
-    "#d90368",#Dogwood Rose
-    "#820263",#Byzantium
-    "#291720",#Dark Purple
-    "#04a777"#Green Munsell
+    #RICH BLACK
+    '#022f40',
+    #MAXIMUM BLUE
+    '#38aecc',
+    #BLUE (NCS)
+    '#0090c1',
+    #YANKEES BLUE
+    '#183446',
+    #SEA BLUE
+    '#046e8f',
   ],
   [
-    "#969a97",#Spanish Gray
-    "#d6d1cd",#Timberwolf
-    "#e5ece9",#Mint Cream
-    "#c60f7b",#Magenta Dye
-    "#f90093",#Magenta Process
+    #RICH BLACK (FOGRA29)
+    '#041b15',
+    #DEEP GREEN-CYAN TURQUOISE
+    '#136f63',
+    #LIGHT SEA GREEN
+    '#22aaa1',
+    #TURQUOISE
+    '#4ce0d2',
+    #SKY BLUE
+    '#84cae7',
   ],
   [
-    '#02010A',#Rich Black Fogra 39
-    '#04052E',#Oxford Blue
-    '#140152',#Midnight Blue
-    '#22007C',#Navy blue
-    '#0D00A4',#Duke Blue
+    #FROSTBITE
+    '#f433ab',
+    #DEEP MAGENTA
+    '#cb04a5',
+    #PLUM
+    '#934683',
+    #WINE DREGS
+    '#65334d',
+    #DARK SIENNA
+    '#2d1115',
   ],
   [
-    '#81717aff',#Old Lavender
-    '#9d8ca1ff',#Heliotrope Gray
-    '#9993b2ff',#Cool Grey
-    '#a7abddff',#Maximum Blue Purple
-    '#b4d4eeff',#Beau Blue
+    #STIL DE GRAIN YELLOW
+    '#f2dc5d',
+    #MUSTARD
+    '#f2db59',
+    #BOOGER BUSTER
+    '#dbc964',
+    #DARK YELLOW
+    '#a38b03',
+    #PULLMAN GREEN
+    '#352f0a',
   ],
   [
-    '#deface',#Light Green
-    '#feeded',#Light Pink
-    '#beefed',#Acqua Green
-    '#dabbed',#Light Violet
-    '#deafed',#Another Light Violet
+    #VERY LIGHT BLUE
+    '#6e44ff',
+    #PALE VIOLET
+    '#a991ff',
+    #PERIWINKLE
+    '#cfc1ff',
+    #PALE VIOLET
+    '#a78eff',
+    #MEDIUM PURPLE
+    '#937aef',
+  ],
+  [
+    #BIG DIP O’RUBY
+    '#8b1e3f',
+    #DARK SIENNA
+    '#3d1521',
+    #ENGLISH LAVENDER
+    '#bc8797',
+    #VANILLA ICE
+    '#ef86a5',
+    #PARADISE PINK
+    '#db3f6e',
+  ],
+  [
+    #OLIVE DRAB (#7)
+    '#3d3522',
+    #TAUPE
+    '#49412d',
+    #UMBER
+    '#605438',
+    #DEER
+    '#af9557',
+    #CHAMPAGNE
+    '#f7e9ca',
+  ],
+  [
+    #ARSENIC
+    '#424342',
+    #CAL POLY POMONA GREEN
+    '#244f24',
+    #LINCOLN GREEN
+    '#1b6d1b',
+    #INDIA GREEN
+    '#109910',
+    #NEON GREEN
+    '#1efc1e',
+  ],
+  [
+    #DAVY'S GREY
+    '#595959',
+    #TROLLEY GREY
+    '#7f7f7f',
+    #QUICK SILVER
+    '#a5a5a5',
+    #PASTEL GRAY
+    '#cccccc',
+    #ANTI-FLASH WHITE
+    '#f2f2f2',
+  ],
+  [
+    #MIDDLE RED PURPLE
+    '#0c0a3e',
+    #ST. PATRICK'S BLUE
+    '#201d7a',
+    #OCEAN BLUE
+    '#423eb2',
+    #MAJORELLE BLUE
+    '#554ff9',
+    #MEDIUM SLATE BLUE
+    '#7a76f2',
+  ],
+  [
+    #DARK SCARLET
+    '#650d1b',
+    #RED DEVIL
+    '#820015',
+    #RUBY RED
+    '#9b1229',
+    #VIVID BURGUNDY
+    '#ad1b34',
+    #CRIMSON
+    '#dd1f3e',
+  ],
+  [
+    #RICH BLACK (FOGRA29)
+    '#0d0221',
+    #MIDDLE RED PURPLE
+    '#1f0849',
+    #KSU PURPLE
+    '#49258c',
+    #LIGHT PASTEL PURPLE
+    '#b7a7d6',
+    #SOAP
+    '#cfc2e8',
+  ],
+  [
+    #BEIGE
+    '#f6fedb',
+    #PALE GOLDENROD
+    '#d5e5a2',
+    #MEDIUM SPRING BUD
+    '#c1d875',
+    #MONOCHROMATIC MODE
+    '#aac454',
+    #OLIVE DRAB (#3)
+    '#7d962a',
+  ],
+  [
+    #ENGLISH RED
+    '#a54657',
+    #CAPUT MORTUUM
+    '#59262f',
+    #TULIP
+    '#f77e94',
+    #WILD WATERMELON
+    '#f26a83',
+    #FIERY ROSE
+    '#f25773',
+  ],
+  [
+    #Dark Orange
+    "#fb8b24",
+    #Dogwood Rose
+    "#d90368",
+    #Byzantium
+    "#820263",
+    #Dark Purple
+    "#291720",
+    #Green Munsell
+    "#04a777",
+  ],
+  [
+    #Spanish Gray
+    "#969a97",
+    #Timberwolf
+    "#d6d1cd",
+    #Mint Cream
+    "#e5ece9",
+    #Magenta Dye
+    "#c60f7b",
+    #Magenta Process
+    "#f90093",
+  ],
+  [
+    #Rich Black Fogra 39
+    '#02010A',
+    #Oxford Blue
+    '#04052E',
+    #Midnight Blue
+    '#140152',
+    #Navy blue
+    '#22007C',
+    #Duke Blue
+    '#0D00A4',
+  ],
+  [
+    #Old Lavender
+    '#81717aff',
+    #Heliotrope Gray
+    '#9d8ca1ff',
+    #Cool Grey
+    '#9993b2ff',
+    #Maximum Blue Purple
+    '#a7abddff',
+    #Beau Blue
+    '#b4d4eeff',
+  ],
+  [
+    #Light Green
+    '#deface',
+    #Light Pink
+    '#feeded',
+    #Acqua Green
+    '#beefed',
+    #Light Violet
+    '#dabbed',
+    #Another Light Violet
+    '#deafed',
   ]
 ]
