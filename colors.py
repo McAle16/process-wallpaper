@@ -286,5 +286,17 @@ colors = [
     '#DABBED',
     #ANOTHER LIGHT VIOLET
     '#DEAFED',
+  ],
+  [
+    #VAN DYKE
+    "#4E3D42",
+    #DIM GRAY
+    "#6D6466",
+    #ASH GRAY
+    "#9F9F92",
+    #TEA GREEN
+    "#C9D5B5",
+    #TIMBERWOLF
+    "#E3DBDB"
   ]
 ]
