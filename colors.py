@@ -1,53 +1,5 @@
 colors = [
   [
-    #SPANISH-VIOLET
-    '#442288',
-    #LITTLE BOY BLUE
-    '#6CA2EA',
-    #ANDROID GREEN
-    '#B5D33D',
-    #SUNGLOW
-    '#FED23F',
-    #BURNT SIENNA
-    '#EB7D5B',
-  ],
-  [
-    #LIGHTBLUE
-    '#ABA6BF',
-    #BLUE
-    '#595775',
-    #BROWN
-    '#583E2E',
-    #CREAM
-    '#F1E0D6',
-    #EARTH
-    '#BF988F',
-  ],
-  [
-    #ORANGE
-    '#CE8054',
-    #RED
-    '#B35340',
-    #PRUNE
-    '#6F3637',
-    #BLUE
-    '#233342',
-    #PURPLE
-    '#4B2B31',
-  ],
-  [
-    #BLUE
-    '#6465A5',
-    #MEDIUM BLUE
-    '#6975A6',
-    #YELLOW
-    '#F3E96B',
-    #ORANGE
-    '#F28A30',
-    #RED
-    '#F05837',
-  ],
-  [
     #BLUE
     '#0444BF',
     #MEDIUM BLUE
